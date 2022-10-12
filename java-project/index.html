@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <select name="dbtn" id="dropdown">
+        <option value="select">--select--</option>
+        <option value="papaya">papaya</option>
+        <option value="mango">mango</option>
+        <option value="pineapple">pineapple</option>
+        <option value="banana">banana</option>
+    </select>
+   <p id="demo"></p>
+    <script>
+        const dropdown = document.getElementById('dropdown');
+        dropdown.onchange = () => {     //event listener ka code ha sirf ya line
+            x = document.getElementById('dropdown').value;
+            switch (x) {
+                case 'papaya':
+                document.getElementById('demo').textContent = 'papaya is 393rs kilo';
+                break;
+                case 'mango':
+                document.getElementById('demo').textContent = 'mango are 40 rs kilo' ; 
+                break;
+                case 'pineapple':
+                document.getElementById('demo').textContent = 'pineapple are 890 rs kilo' ; 
+                break;
+                case 'banana':
+                document.getElementById('demo').textContent = 'banana are 560 rs kilo' ; 
+                break;
+                default:
+                document.getElementById('demo').textContent = 'select your option' ; 
+                break;
+            }
+        }
+        document.getElementById('demo').textContent = 'select your option' ; 
+    </script>
+</body>
+</html>
