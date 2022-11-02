@@ -1,11 +1,17 @@
 *{
-    margin: 0px;
-    padding: opx;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+.form {
+    display: flex;
+    height: 100vh;
+    
+  }
 .left {
     width: 45%;
     padding: 2rem 4rem;
+    margin-left: 100px;
 }
 .right {
     width: 55%;
@@ -25,67 +31,59 @@ height: 90px;
 .left .login-form input{
     display: inline-block;
 height: 75px;
-width: 400px;
-margin-left: 40px;
+width: 450px;
 margin-top: 20px;
 }
 .left .login-form .fp{
     margin-top: 50px;
     font-size: larger;
+    
+}
+.left .login-form .fp a{
+    text-decoration: none;
 }
 .left .login-form .fp button{
-    margin-left: 175px;
+    margin-left: 180px;
     background-color: black;
     color: azure;
     height: 40px;
     width: 90px;
 }
 .left .button-links{
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 40px;
 }
-.left .button-links button{
+.button-links a{
+    margin-left: 60px;
+    margin-top: 10px;
+    display: inline-flex;
+    border: 2px solid #c4c3c3;
+    font-size: 30px;
     
-    margin-left: 100px;
-    margin-top: 35px;
+    padding: 10px;
+    border-radius: 50%;
 }
+
+
 .left .button-links .footer {
     margin-top: 20px;
 }
 .right{
     background: url(./bg.jpeg) no-repeat scroll center / cover;
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: aliceblue;
    
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .right {
-    background: url(./bg.jpeg) no-repeat scroll center cover;
-   display: flex;
-flex-direction: column;
-align-items: center;
-
-justify-content: flex-end;
  
+  .right img{
+display: flex;
+justify-content: center;
+height: 100%;
+  }
+.right .top-con-2 {
+    text-align: center;
+    margin-top: 150px;
 }
-.top-con-2 {
-    display: flex;
-    justify-content: flex-end;
-   
-} */
